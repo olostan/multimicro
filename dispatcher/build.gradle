@@ -59,10 +59,10 @@ applicationDistribution.into("bin") {
     from(dispatcherServer)
     fileMode = 0755
 }
-targetCompatibility = 8
+targetCompatibility = 7
 /*
 docker {
-    baseImage "java:8"
+    baseImage "java:7"
     maintainer 'Valentyn Shybanov "olostan@gmail.com"'
 }
 distDocker {
