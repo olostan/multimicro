@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: renderer
+  name: renderer-controller
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: renderer
+    spec:
+      containers:
+      - image: gcr.io/multimicro/renderer
+        name: renderer
+        ports:
+        - containerPort: 50052
+          name: renderer

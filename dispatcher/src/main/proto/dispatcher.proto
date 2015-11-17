@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "name.olostan.dispatcher";
+
+package dispatcher;
+
+// The greeting service definition.
+service Dispatcher {
+  // Sends a greeting
+  rpc Dispatch (DispatchRequest) returns (DispatchReply) {}
+}
+
+// The request message containing the user's name.
+message DispatchRequest {
+  bytes image = 1;
+}
+
+// The response message containing the greetings
+message DispatchReply {
+  bytes image = 1;
+}
+

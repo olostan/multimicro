@@ -1,0 +1,9 @@
+.idea
+.gradle
+node_modules
+build
+bin
+pkg
+renderer/src/github.com
+renderer/src/golang.org
+renderer/src/google.golang.org

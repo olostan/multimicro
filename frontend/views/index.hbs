@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload your file</title>
+</head>
+
+<body>
+<div>
+{{#if image}}
+    File {{name}}:
+        <img alt="Embedded Image" src="data:image/jpg;base64,{{image}}">
+    <hr>
+{{/if}}
+</div>
+
+<form method='post' action='.' enctype="multipart/form-data">
+    <input type='file' name='fileUploaded'>
+    <input type='submit'>
+</form>
+</body>
+</html>

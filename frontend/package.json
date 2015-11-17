@@ -1,0 +1,19 @@
+{
+  "name": "multimicro-frontend",
+  "version": "1.0.0",
+  "description": "Demo app for MultiLingual Microservices",
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "olostan@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "connect-busboy": "0.0.2",
+    "express": "^4.13.3",
+    "hbs": "^4.0.0",
+    "stream-buffers": "^2.2.0",
+    "grpc": "~0.11.0"
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../build/generated/source/proto/main/grpc">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../build/generated/source/proto/main/grpc" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../../../build/generated/source/proto/main/java">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../build/generated/source/proto/main/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-all/0.9.0/bb7d41b24eea7a1b77ba2fc2bb9d984250da4805/grpc-all-0.9.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-all/0.9.0/5c66dc4b881a4143ee8089cefda0f81267298d80/grpc-all-0.9.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
