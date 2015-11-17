@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   labels:
     name: renderer
-  name: renderer-controller
+  name: renderer
 spec:
   replicas: 4
   template:
