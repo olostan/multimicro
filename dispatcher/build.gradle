@@ -60,6 +60,7 @@ applicationDistribution.into("bin") {
     fileMode = 0755
 }
 targetCompatibility = 7
+sourceCompatibility = 7
 /*
 docker {
     baseImage "java:7"
