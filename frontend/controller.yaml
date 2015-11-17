@@ -16,7 +16,7 @@ spec:
         name: frontend
         env:
           - name: DISPATCHER
-          value: "dispatcher"
+            value: "dispatcher"
 
         ports:
         - containerPort: 8080
