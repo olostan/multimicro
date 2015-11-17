@@ -59,7 +59,14 @@ applicationDistribution.into("bin") {
     from(dispatcherServer)
     fileMode = 0755
 }
+<<<<<<<< Workspace
 targetCompatibility = 7
+|||||||| Baseline
+targetCompatibility = 8
+========
+targetCompatibility = 7
+sourceCompatibility = 7
+>>>>>>>> Alias
 /*
 docker {
     baseImage "java:7"

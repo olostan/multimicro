@@ -83,8 +83,9 @@ public class DispatcherServer {
 
 
     @Override
-    public void dispatch(DispatcherOuterClass.DispatchRequest request, StreamObserver<DispatcherOuterClass.DispatchReply> responseObserver) {
+    public void dispatch(DispatcherOuterClass.DispatchRequest request, StreamObserver<DispatcherOuterClass.DispatchReply> responseObserverP) {
       logger.info("Dispatching request to renderer");
+      final StreamObserver<DispatcherOuterClass.DispatchReply> responseObserver = responseObserverP;
       RendererOuterClass.RenderRequest renderRequest =
               RendererOuterClass.RenderRequest.newBuilder().setTexture(request.getImage()).build();
       StreamObserver<RendererOuterClass.RenderResponse> renderResult = new StreamObserver<RendererOuterClass.RenderResponse>() {
