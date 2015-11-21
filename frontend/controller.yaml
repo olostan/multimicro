@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   labels:
     name: frontend
-    uses: dispatcher
+    visualize: "true"
   name: frontend
 spec:
   replicas: 2
@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         name: frontend
+        uses: dispatcher
+        visualize: "true"
     spec:
       containers:
       - image: gcr.io/multimicro-1129/frontend

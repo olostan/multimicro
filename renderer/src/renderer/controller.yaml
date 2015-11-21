@@ -3,13 +3,17 @@ kind: ReplicationController
 metadata:
   labels:
     name: renderer
+    visualize: "true"
   name: renderer
 spec:
   replicas: 4
+  selector:
+    name: renderer
   template:
     metadata:
       labels:
         name: renderer
+        visualize: "true"
     spec:
       containers:
       - image: gcr.io/multimicro-1129/renderer

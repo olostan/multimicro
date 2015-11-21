@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   labels:
     name: dispatcher
-    uses: renderer
+    visualize: "true"
   name: dispatcher
 spec:
   replicas: 1
@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         name: dispatcher
+        visualize: "true"
+        uses: renderer
     spec:
       containers:
       - image: gcr.io/multimicro-1129/dispatcher
