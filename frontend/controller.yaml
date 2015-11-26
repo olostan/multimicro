@@ -6,8 +6,6 @@ metadata:
     visualize: true
     uses: dispatcher
   name: frontend-controller
-|||||||| Baseline
-  name: frontend-controller
 ========
     visualize: "true"
   name: frontend
