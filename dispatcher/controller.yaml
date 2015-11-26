@@ -14,7 +14,7 @@ spec:
         name: dispatcher
     spec:
       containers:
-      - image: gcr.io/multimicro/dispatcher
+      - image: gcr.io/multimicro-11/dispatcher
         name: dispatcher
         env:
           - name: RENDERER
