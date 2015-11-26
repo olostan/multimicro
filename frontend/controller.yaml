@@ -10,9 +10,11 @@ spec:
     metadata:
       labels:
         name: frontend
+        visualize: true
+        
     spec:
       containers:
-      - image: gcr.io/multimicro-/frontend
+      - image: gcr.io/multimicro-1129/frontend
         name: frontend
         env:
           - name: DISPATCHER
