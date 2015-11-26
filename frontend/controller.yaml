@@ -13,8 +13,7 @@ spec:
       labels:
         name: frontend
         visualize: true
-                uses: dispatcher
-        visualize: "true"
+        uses: dispatcher
 >>>>>>>> Alias
     spec:
       containers:
