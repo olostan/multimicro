@@ -5,16 +5,13 @@ metadata:
     name: frontend
     visualize: true
     uses: dispatcher
-  name: frontend-controller
   name: frontend
->>>>>>>> Alias
 spec:
   replicas: 2
   template:
     metadata:
       labels:
         name: frontend
-<<<<<<<< Workspace
         visualize: true
         
 |||||||| Baseline
