@@ -3,7 +3,6 @@ kind: ReplicationController
 metadata:
   labels:
     name: frontend
-
     visualize: true
     uses: dispatcher
   name: frontend-controller
