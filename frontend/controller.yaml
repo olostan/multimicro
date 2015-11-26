@@ -3,24 +3,37 @@ kind: ReplicationController
 metadata:
   labels:
     name: frontend
+<<<<<<<< Workspace
     visualize: true
     uses: dispatcher
   name: frontend-controller
+|||||||| Baseline
+  name: frontend-controller
+========
+    visualize: "true"
+  name: frontend
+>>>>>>>> Alias
 spec:
   replicas: 2
   template:
     metadata:
       labels:
         name: frontend
+<<<<<<<< Workspace
         visualize: true
         
+|||||||| Baseline
+========
+        uses: dispatcher
+        visualize: "true"
+>>>>>>>> Alias
     spec:
       containers:
       - image: gcr.io/multimicro-1129/frontend
         name: frontend
         env:
           - name: DISPATCHER
-          value: "dispatcher"
+            value: "dispatcher"
 
         ports:
         - containerPort: 8080

@@ -3,14 +3,24 @@ kind: ReplicationController
 metadata:
   labels:
     name: renderer
+<<<<<<<< Workspace
     
   name: renderer-controller
+|||||||| Baseline
+  name: renderer-controller
+========
+    visualize: "true"
+  name: renderer
+>>>>>>>> Alias
 spec:
-  replicas: 2
+  replicas: 4
+  selector:
+    name: renderer
   template:
     metadata:
       labels:
         name: renderer
+        visualize: "true"
     spec:
       containers:
       - image: gcr.io/multimicro-1129/renderer

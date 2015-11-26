@@ -17,9 +17,9 @@ var grpc = require('grpc');
 
 var dispatcher_proto = grpc.load('dispatcher.proto').dispatcher;
 
-var distpacherUrl = process.env['DISPATCHER'] || 'localhost';
-console.log("Dispatcher "+distpacherUrl);
-var client = new dispatcher_proto.Dispatcher(distpacherUrl+':50051',
+var dispatcherUrl = process.env['DISPATCHER'] || 'localhost';
+console.log("Dispatcher "+dispatcherUrl);
+var client = new dispatcher_proto.Dispatcher(dispatcherUrl+':50051',
     grpc.Credentials.createInsecure());
 
 

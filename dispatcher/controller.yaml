@@ -3,22 +3,37 @@ kind: ReplicationController
 metadata:
   labels:
     name: dispatcher
+<<<<<<<< Workspace
     visualize: true
     uses: renderer
   name: dispatcher-controller
+|||||||| Baseline
+  name: dispatcher-controller
+========
+    visualize: "true"
+  name: dispatcher
+>>>>>>>> Alias
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
         name: dispatcher
+        visualize: "true"
+        uses: renderer
     spec:
       containers:
+<<<<<<<< Workspace
       - image: gcr.io/multimicro-11/dispatcher
+|||||||| Baseline
+      - image: gcr.io/multimicro/dispatcher
+========
+      - image: gcr.io/multimicro-1129/dispatcher
+>>>>>>>> Alias
         name: dispatcher
         env:
           - name: RENDERER
-          value: "renderer"
+            value: "renderer"
         ports:
         - containerPort: 50051
           name: dispatcher
