@@ -4,7 +4,7 @@ metadata:
   name: frontend
   labels:
     name: frontend
-  
+    
 spec:
   type: LoadBalancer
   ports:
