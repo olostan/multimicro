@@ -3,6 +3,7 @@ kind: ReplicationController
 metadata:
   labels:
     name: frontend
+    
   name: frontend-controller
 spec:
   replicas: 2
