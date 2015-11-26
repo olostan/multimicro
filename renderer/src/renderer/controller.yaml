@@ -12,7 +12,7 @@ spec:
         name: renderer
     spec:
       containers:
-      - image: gcr.io/multimicro/renderer
+      - image: gcr.io/multimicro--/renderer
         name: renderer
         ports:
         - containerPort: 50052
