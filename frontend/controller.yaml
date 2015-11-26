@@ -12,7 +12,7 @@ spec:
         name: frontend
     spec:
       containers:
-      - image: gcr.io/multimicro/frontend
+      - image: gcr.io/multimicro-/frontend
         name: frontend
         env:
           - name: DISPATCHER
