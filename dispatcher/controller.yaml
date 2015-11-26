@@ -3,6 +3,7 @@ kind: ReplicationController
 metadata:
   labels:
     name: dispatcher
+    
   name: dispatcher-controller
 spec:
   replicas: 2
