@@ -13,10 +13,7 @@ spec:
       labels:
         name: frontend
         visualize: true
-        
-|||||||| Baseline
-========
-        uses: dispatcher
+                uses: dispatcher
         visualize: "true"
 >>>>>>>> Alias
     spec:
